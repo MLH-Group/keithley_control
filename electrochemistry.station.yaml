@@ -1,0 +1,22 @@
+# YAML Station configuration file
+# Default values for sput2 instrument rack
+instruments:
+  keithley1:
+    type: Keithley_2600.Keithley2600
+    address: GPIB0::26::INSTR #USB0::0x05E6::0x2636::4629010::INSTR
+    enable_forced_reconnect: true
+
+  keithley2:
+    type: Keithley_2600.Keithley2600
+    address: GPIB0::25::INSTR #USB0::0x05E6::0x2614::4070377::INSTR
+    enable_forced_reconnect: true
+
+  nanovoltmeter1:
+    type: keithley2182a.keithley2182a
+    address: GPIB0::16::INSTR
+
+  nanovoltmeter2:
+    type: keithley2182a.keithley2182a
+    address: GPIB0::15::INSTR
+
+
