@@ -9,13 +9,6 @@ from qcodes.dataset import (
 )
 
 from typing import Optional
-
-## Dummy instruments for generating synthetic data
-from qcodes.tests.instrument_mocks import (
-    DummyInstrument,
-    DummyInstrumentWithMeasurement
-)
-
 from time import sleep
 
 ## Multidimensional scanning module
@@ -100,3 +93,4 @@ class DiagonalIntercept(Parameter):
     def set_raw(self, y):
         self._intercept = y
         self._source.intercept = y
+
