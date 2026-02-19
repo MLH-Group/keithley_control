@@ -1,0 +1,17 @@
+# YAML Station configuration file (simulated Keithley 2600 instruments)
+instruments:
+  keithley1:
+    type: Keithley_2600_sim.Keithley2600
+    address: SIM::K2600::1
+
+  keithley2:
+    type: Keithley_2600_sim.Keithley2600
+    address: SIM::K2600::2
+
+  nanovoltmeter1:
+    type: keithley2182a.keithley2182a
+    address: GPIB0::16::INSTR
+
+  nanovoltmeter2:
+    type: keithley2182a.keithley2182a
+    address: GPIB0::15::INSTR
